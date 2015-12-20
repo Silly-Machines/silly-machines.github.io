@@ -1,0 +1,6 @@
+domain: silly-machines.github.io
+name: "Silly Machines"
+networks:
+    twitter: https://twitter.com/SillyMachines
+    facebook: https://www.facebook.com/SillyMachines
+    github: https://www.github.com/Silly-Machines
