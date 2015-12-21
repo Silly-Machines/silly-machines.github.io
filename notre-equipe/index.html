@@ -1,0 +1,24 @@
+---
+layout: project
+title: Notre équipe
+---
+
+	<section class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Les membres</h2>
+			</header>
+			<p>La liste de nos membres actifs</p>
+			<div class="row 150%">
+				{% for member in site.data.members %}
+				<div class="2u 3u(medium) 4u(xsmall)">
+					<span class="image fit"><img src="https://avatars.githubusercontent.com/{{ member.github }}" alt="" /></span>
+					<h3>{{ member.name }}</h3>
+					<ul class="actions">
+						<li><a href="https://www.github.com/{{ member.github }}" class="button"><span class="icon alt fa-github"><span class="label">Profil GitHub</span></span></a></li>
+					</ul>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
