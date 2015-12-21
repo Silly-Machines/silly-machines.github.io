@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ site.name }}{% if page.title %} — {{ page.title }}{% endif %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie9.css" /><![endif]-->
+		
+		<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+		<link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+	</head>
+	<body>
+		<section id="header">
+			<div class="inner">
+				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-silly-machines.png" alt="Silly Machines"></a>
+			</div>
+		</section>
+{{ content }}
+{% include footer.html %}
+
+		<!-- Scripts -->
+			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/jquery.scrolly.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<!--
+Photon by HTML5 UP
+-->
+	</body>
+</html>
